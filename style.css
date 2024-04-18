@@ -24,14 +24,14 @@ p, h1 {
 
 p {
   font-weight: lighter;
-  font-size: 1.5em;
-  line-height: 2.5em;
+  font-size: 3vmin;
+  line-height: 5vmin;
   letter-spacing: -0.05em;
   word-spacing: 0.2em;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 8vmin;
   font-weight: normal;
 }
 
@@ -71,8 +71,8 @@ h1 {
   font-family: "Kavivanar", cursive;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: -0.3vmin;
-  font-size: 3.5em;
+  letter-spacing: -2.3vmin;
+  font-size: 7vmin;
 
 }
 
@@ -221,7 +221,7 @@ img{
   font-optical-sizing: auto;
   font-weight: lighter;
   font-style: normal;
-  font-size: 1.5vmin;
+  font-size: 3vmin;
   line-height: 5vmin;
   letter-spacing: -0.05em;
   word-spacing: 0.2em;
@@ -230,7 +230,7 @@ img{
 
 .contentItem h3{
   display: flex;
-  font-size: 2.5vmin;
+  font-size: 5vmin;
   font-weight: 400;
   margin-top: 0vmin;
   margin-left: 4vmin;
