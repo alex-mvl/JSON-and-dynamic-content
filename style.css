@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Kavivanar&family=Quicksand&display=swap');
+
+body {
+  margin: 0;
+  background-image: url(backgroundImage.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #eee;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #222;
+}
+
+p, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-weight: lighter;
+  font-size: 1.5em;
+  line-height: 2.5em;
+  letter-spacing: -0.05em;
+  word-spacing: 0.2em;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: normal;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 2.5vmin;
+  grid-row-gap: 6vmin;
+  padding: 20vmin 17vmin 4vmin 17vmin;
+  position: relative;
+
+}
+
+.mainGrid * {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.fullWidth {
+  grid-column-end: span 8;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(44, 42, 42, 1);
+  padding: 1vmin 5vmin 1vmin 5vmin;
+  margin-bottom: 3vmin;
+  position: fixed;
+  width: 95vw;
+  z-index: 1;
+}
+
+
+.logo{
+  font-family: "Kavivanar", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.3vmin;
+  font-size: 3.5em;
+
+}
+
+.sideMenu{
+  display: flex;
+  flex-direction: row;
+  border-radius: 5em;
+  border-bottom: 0.07vmax solid black;
+/*  border-right: 0.07vmax solid black;*/
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: black dotted underline .4vmin;
+}
+
+.menu a {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #2C2A2A;
+  margin: 1em;
+}
+
+.header {
+  display: flex;
+/*  align-items: center;*/
+  flex-direction: column;
+/*  justify-content: center;*/
+/*  height: 75vh;*/
+  background-image: url(#.png);
+  background-position: center;
+  background-size: cover;
+  justify-self: stretch;
+}
+
+.underline{
+  text-decoration: underline 0.3vmin;
+  text-underline-offset: 0.8vmin;
+}
+.colorUnderline{
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+.colorUnderline::after {
+  content:'';
+  width:100%;
+  position: absolute;
+  left:0;
+  bottom:0.3vmin;
+  height: 0.4vmin;
+  background: linear-gradient(to right, lightcoral, lightblue);
+  z-index: -1;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 0.3vmin 0.3vmin 0;
+  display: inline-block;
+  padding: 2.5vmin;
+  margin: 2vmin;
+  position: absolute;
+  bottom: 2vmin;
+  left: 48.5%;
+}
+
+.down {
+  transform: rotate(45deg);
+}
+img{
+
+  width: 60vmin;
+}
+.item-4x4 {
+  grid-column-end: span 8;
+  justify-self: end;
+  rotate: 25deg;
+
+}
+
+.menuSquare{
+  display: flex;
+  position: sticky;
+  top: 0vmax;
+  width: 100%;
+  height: 5vmax;
+  background-color: #FFF5E8;
+
+}
+
+.secondGrid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 5vmin;
+  background-color: #FFF5E8;
+
+}
+
+#contentGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15vmin;
+  grid-row-gap: 15vmin;
+  background-color: #FFF5E8;
+  padding: 10vmin 20vmin 10vmin 20vmin;
+  font-size: 1.5vmin;
+  height: 100%;
+  grid-auto-rows: 1fr;
+
+
+}
+
+
+.heading{
+  grid-column-end: span 2;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+
+
+
+.contentItem {
+  display: flex;
+  flex-direction: column;
+  /* align-items: stretch; */
+  padding: 1vmin;
+  color: black;
+ 
+  
+  border: 2px solid #eee;
+  border-radius: 2.5vmin;
+  height: 100%;
+
+}
+
+.contentItem * {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 1.5vmin;
+  line-height: 5vmin;
+  letter-spacing: -0.05em;
+  word-spacing: 0.2em;
+
+}
+
+.contentItem h3{
+  display: flex;
+  font-size: 2.5vmin;
+  font-weight: 400;
+  margin-top: 0vmin;
+  margin-left: 4vmin;
+  margin-right: 4vmin;
+  margin-bottom: 1vmin;
+
+}
+
+.contentItem h4{
+  display: flex;
+  margin-left: 4vmin;
+  margin-right: 4vmin;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: blue;
+
+}
+
+
+.footerImage {
+  height:50%;
+  object-fit: cover;
+  padding: 4vmin;
+  border-radius: 2vmin;
+
+}
+
